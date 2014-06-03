@@ -5,6 +5,9 @@ FILENAME = "birthrmd.cfg"
 
 
 def parse_config(FILENAME):
+    """
+    return a dict that contain all the config infomation
+    """
     scpr = SafeConfigParser()
     scpr.read(utils.fix_path(FILENAME))
 
